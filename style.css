@@ -1,0 +1,154 @@
+:root {
+  --primary-blue: #2563eb;
+  --bg-color: #0a192f;
+  --text-color: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --glow-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing Background Effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--glow-color) 20%, transparent 80%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.05s;
+  opacity: 0.5;
+  filter: blur(50px);
+}
+
+body:hover::before {
+  opacity: 1;
+}
+
+/* Cursor-based glow animation */
+body:hover {
+  background-position: center;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-blue) !important;
+}
+
+.custom-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+}
+
+/* About and Where I Work Section */
+.section-box {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+.section-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Projects and Blog Section */
+.project-card,
+.blog-card {
+  flex: 0 0 24%;
+}
+
+.project-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--primary-blue);
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary) !important;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer span {
+  color: var(--text-secondary);
+}
+.btn{
+  color: rgb(255, 255, 255) !important;
+}

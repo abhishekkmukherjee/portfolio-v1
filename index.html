@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container"> 
+            <a class="navbar-brand h4 mb-0 text-white" href="#">Abhishek Mukherjee.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Building digital products, brands, and experiences!</h1>
+            <p class="lead mb-5 text-secondary">Full Stack Developer focused on creating impactful web solutions</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="mailto:mukherjeeabhishek207@gmail.com" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <h2>About Me</h2>
+            <div class="section-box">
+                <p>
+                  
+                  I’m  a commerce graduate who switched to software engineering out of a passion for tech. I started out by teaching myself web development while working at a startup. Since then, I’ve learned to build projects with React for the frontend, Node.js for the backend, and I also know some DevOps basics. Right now, I’m diving into Web3 and exploring AI, which really interests me.
+
+                  I work at a BSE-listed fintech company in Jharkhand, where I put my skills to use in a fast-paced environment. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where I Work Section -->
+    <section id="work" class="py-5">
+        <div class="container py-5">
+            <h2>Where I Work</h2>
+            <div class="section-box">
+                <ul>
+                    <li>Software Engineer at Vedant Asset Limited  (React, Node.js, March 2023-Present)</li>
+                    <li>Frontend Developer Intern at GoFloww (Vue.js, Firebase, Nov 2022-Feb 2023)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container py-3 py-md-5">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <div class="col">
+              <div class="custom-card p-3 h-100">
+                  <h3 class="h5">Byterun- Online Compiler</h3>
+                  <p class="mb-3">Bootstrap, Vanilla Js</p>
+                  <a href="https://byterun.netlify.app/" class="project-link">View Project →</a>
+              </div>
+          </div>
+          <div class="col">
+              <div class="custom-card p-3 h-100">
+                  <h3 class="h5">K-SCROLL</h3>
+                  <p class="mb-3">Vanilla Js</p>
+                  <a href="https://kscroll.netlify.app/" class="project-link">View Project →</a>
+              </div>
+          </div>
+          <div class="col">
+              <div class="custom-card p-3 h-100">
+                  <h3 class="h5">Simple Todo App</h3>
+                  <p class="mb-3">React Js</p>
+                  <a href="https://todoappp2024.netlify.app/" class="project-link">View Project →</a>
+              </div>
+          </div>
+          <div class="col">
+              <div class="custom-card p-3 h-100">
+                  <h3 class="h5">Ecommerce Platform</h3>
+                  <p class="mb-3">Vanilla Js</p>
+                  <a href="https://saaj1.netlify.app/" class="project-link">View Project →</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container text-center">
+          <h2>Skills</h2>
+          <div class="skills-container mt-4">
+              <div class="skill-box">JavaScript</div>
+              <div class="skill-box">Git</div>
+              <div class="skill-box">React</div>
+              <div class="skill-box">Node.js</div>
+              <div class="skill-box">SEO</div>
+              <div class="skill-box">Mongodb</div>
+              <div class="skill-box">Firebase</div>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- Blog Section -->
+<section id="blog" class="py-5">
+  <div class="container py-3 py-md-5">
+      <h2 class="mb-4">Latest Posts</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <!-- Blog Card 1 -->
+          <div class="col">
+              <div class="custom-card p-3 h-100 d-flex flex-column">
+                  <div class="blog-date mb-2 text-muted">Sep 19, 2024</div>
+                  <h3 class="h5 mb-3">Call Stack, Event Loop, and Callback Queue</h3>
+                  <p class="flex-grow-1">The call stack is like a to-do list for the JavaScript engine. It keeps track of which function is currently being executed and what function will run next.</p>
+                  <a href="https://abmukherjee.hashnode.dev/how-the-call-stack-event-loop-and-callback-queue-work-together" class="project-link mt-auto">Read More →</a>
+              </div>
+          </div>
+          
+          <!-- Blog Card 2 -->
+          <div class="col">
+              <div class="custom-card p-3 h-100 d-flex flex-column">
+                  <div class="blog-date mb-2 text-muted">March 10, 2024</div>
+                  <h3 class="h5 mb-3">AI vs ML vs Deep Learning vs Data Science</h3>
+                  <p class="flex-grow-1">Understanding AI, Machine Learning, Deep Learning, and Data Science: What's the Difference? Have you ever wondered what exactly Artificial Intelligence (AI) is..</p>
+                  <a href="#" class="project-link mt-auto">Read More →</a>
+              </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="col">
+              <div class="custom-card p-3 h-100 d-flex flex-column">
+                  <div class="blog-date mb-2 text-muted">March 10, 2024</div>
+                  <h3 class="h5 mb-3">I asked ChatGPT for a dsa roadmap to crack faang!</h3>
+                  <p class="flex-grow-1">Month 1: Programming Fundamentals and Basic Data Structures Choose a Programming Language: Action: Pick a language like Python, Java, C++....</p>
+                  <a href="https://abmukherjee.hashnode.dev/i-asked-chatgpt-for-a-dsa-roadmap-to-crack-faang" class="project-link mt-auto">Read More →</a>
+              </div>
+          </div>
+
+          <!-- Blog Card 4 -->
+          <div class="col">
+              <div class="custom-card p-3 h-100 d-flex flex-column">
+                  <div class="blog-date mb-2 text-muted">March 10, 2024</div>
+                  <h3 class="h5 mb-3">DevOps Lifecycle - Application focused</h3>
+                  <p class="flex-grow-1">DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to improve the speed and quality of software delivery...</p>
+                  <a href="https://abmukherjee.hashnode.dev/devops-lifecycle-application-focused" class="project-link mt-auto">Read More →</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+ <!-- Footer -->
+ <footer class="footer">
+  <p>© 2024 Abhishek Mukherjee</p>
+  <div class="d-flex justify-content-center gap-3 mt-3">
+      <a href="https://x.com/abmukherjee" class="footer-link" target="_blank">Twitter</a>
+      <a href="https://www.linkedin.com/in/abhishek-mukherjee-a8811a19b/" class="footer-link" target="_blank">LinkedIn</a>
+      <a href="https://github.com/abhishekkmukherjee" class="footer-link" target="_blank">GitHub</a>
+  </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
