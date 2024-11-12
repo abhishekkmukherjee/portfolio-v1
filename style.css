@@ -152,3 +152,8 @@ body:hover {
 .btn{
   color: rgb(255, 255, 255) !important;
 }
+
+button.navbar-toggler {
+ 
+  background-color: white;
+}
